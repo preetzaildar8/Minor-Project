@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { login, reset } from "../features/auth/authSlice";
 import Spinner from "../components/Spinner";
+import './register.css'
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -57,6 +58,7 @@ const Login = () => {
 
   return (
     <>
+    <div className="container">
       <section className="heading">
         <h1>
           <FaSignInAlt /> Login
@@ -90,12 +92,13 @@ const Login = () => {
           </div>
 
           <div className="form-group">
-            <button type="submit" className="btn btn-block">
+            <button type="submit" className="btn btn-primary">
               Submit
             </button>
           </div>
         </form>
       </section>
+      </div>
     </>
   );
 };

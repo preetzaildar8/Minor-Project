@@ -119,7 +119,7 @@ const forgotPassword = async (req, res) => {
       const msg = {
         to: email, // Change to your recipient
         from: {
-          email: "jaswantsinghjsn@gmail.com",
+          email: "techtic.adityapurohit@gmail.com",
           name: "BooksForAll"
         }, // Change to your verified sender
         subject: "Forgot Password",
@@ -309,7 +309,7 @@ const generateOTP = () => {
 
 //send mail
 async function sendMail(msg) {
-  sgMail.setApiKey("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")
+  sgMail.setApiKey("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")
  
   sgMail
     .send(msg)

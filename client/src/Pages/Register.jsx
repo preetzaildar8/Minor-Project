@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { FaUser } from "react-icons/fa";
 import { register, reset } from "../features/auth/authSlice";
 import Spinner from "../components/Spinner";
+import './register.css'
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -64,6 +65,7 @@ const Register = () => {
 
   return (
     <Fragment>
+      <div className="container">
       <section className="heading">
         <h1>
           <FaUser /> Register
@@ -118,12 +120,13 @@ const Register = () => {
             />
           </div>
           <div className="form-group">
-            <button type="submit" className="btn btn-block">
+            <button type="submit" className="btn btn-primary">
               Submit
             </button>
           </div>
         </form>
       </section>
+      </div>
     </Fragment>
   );
 };

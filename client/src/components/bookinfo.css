@@ -1,0 +1,10 @@
+img{
+    height: 300px;
+    width: 220px;
+    border-radius: 2%;
+}
+.book-main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}

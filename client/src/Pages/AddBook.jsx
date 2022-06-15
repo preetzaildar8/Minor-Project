@@ -175,7 +175,7 @@ const AddBook = () => {
           label="Available"
         />
 
-        <Button variant="contained" type="submit">
+        <Button className="addbook-button" variant="contained" type="submit">
           Add Book
         </Button>
       </Box>
